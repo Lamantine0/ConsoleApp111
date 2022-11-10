@@ -9,10 +9,40 @@ namespace ConsoleApp111
 
 
         static void Main(string[] args)
-        {   
-            Person tom = new Person();
+        {
 
+            Characters characters = new Characters("Ludmilla", "Tetra", "Unlimited", "Snow Phantom");
+            characters.PrintInfo();
+
+
+            Person bob = new Person();
+            Person tom = new Person("Tom");
+            Person sam = new Person("sam", 55);
+           // Weather weather = new Weather();
+         
+            
+            
+       
+           
+            
+
+
+            bob.Print();
             tom.Print();
+            sam.Print();
+
+            Car car = new Car("номер №1", "номер №2");
+
+            car.Print();
+
+            Car car1 = new Car("ddddd", "aaaaaa");
+
+
+            (_, string wheel2) = car1;
+
+            //Console.WriteLine(wheel1);
+            Console.WriteLine(wheel2);
+
 
 
         }
