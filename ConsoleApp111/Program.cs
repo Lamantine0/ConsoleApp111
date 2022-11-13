@@ -18,9 +18,9 @@ namespace ConsoleApp111
             Person bob = new Person();
             Person tom = new Person("Tom");
             Person sam = new Person("sam", 55);
-           // Weather weather = new Weather();
-         
-            
+            Weather weather = new Weather(40, 1);
+
+            weather.InfoCels();
             
        
            

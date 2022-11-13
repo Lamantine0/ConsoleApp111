@@ -6,53 +6,49 @@ namespace ConsoleApp111
 {
     public class Weather
     {
-        
+
+        public int DegreesCelsius;
+        public int Weatherminus;
 
 
 
-        public Weather()
+
+        public Weather(int degreesCelsius, int weatherminus)
         {
-                Random random = new Random();
-                var degreesCelsius = random.Next(-30, 40);
 
-            if (degreesCelsius > 40)
-            {
+             DegreesCelsius = degreesCelsius;
+             Weatherminus = weatherminus;
 
-                Console.WriteLine($"{degreesCelsius} : выпейте воды");
-
-                var degreesCelsius1 = random.Next(-30, 40);
-
-                if (degreesCelsius1 <= -30)
-                {
-                    Console.WriteLine($"{degreesCelsius} Оденьте шарф");
-                }
-
-            }
-
-            
-
-           
-
-
-            
-
-            
 
         }
 
 
+        public  void InfoCels()
+        {
+            
+            Random random = new Random();
+            int DegreesCelsius  = random.Next(40);
+            int Weatherminus = random.Next(-0);
+
+            if (DegreesCelsius >= 40)
+            {
+               
+                Console.WriteLine($"{DegreesCelsius} : выпейте воды");
+
+
+               //var degreesCelsius1 = random.Next(-30, 40);
+
+                if (Weatherminus == 1)
+                {
+                    Console.WriteLine($"{DegreesCelsius} Оденьте шарф");
+
+                }
+            }
+            //Console.WriteLine(DegreesCelsius);
+        }
 
 
 
-
-
-
-
-
-
-
-
-
+        
     }
 }
-
