@@ -20,16 +20,19 @@ namespace ConsoleApp111
             Person sam = new Person("sam", 55);
 
             Weather weather = new Weather(40, 1);
-            weather.InfoCels();
+            //weather.InfoCels();
 
-        
-            
+            // создание объекта 
+            UserInfo userInfo = new UserInfo();
 
-           
-            
-       
-           
-            
+            // вызов метода WriteInConsoleInfo внутри класса UserInfo
+            userInfo.WriteInConsoleInfo("Dima", "Tereshko", "myAddres", 27);
+
+
+
+
+
+
 
 
             bob.Print();
@@ -43,10 +46,10 @@ namespace ConsoleApp111
             Car car1 = new Car("ddddd", "aaaaaa");
 
 
-            (_, string wheel2) = car1;
+            //(_, string wheel2) = car1;
 
             //Console.WriteLine(wheel1);
-            Console.WriteLine(wheel2);
+            //Console.WriteLine(wheel2);
 
 
 
