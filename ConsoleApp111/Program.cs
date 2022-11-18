@@ -29,6 +29,26 @@ namespace ConsoleApp111
             userInfo.WriteInConsoleInfo("Dima", "Tereshko", "myAddres", 27);
 
 
+            Properties properties = new Properties();
+
+            Console.WriteLine(properties.Age); // вызов объекта через консоль 
+            properties.Age = 777; // присваение ногово значения , отрабатывание 
+
+            Item item = new Item(); // создания объекта 
+            item.Color = "Blue"; // присвоение значения 
+            Console.WriteLine(item.Color);
+
+
+            Item item1 = new Item();
+            item1.FullName = "Tom Tom";
+            Console.WriteLine(item1.FullName);
+
+
+            Item item2 = new Item();
+            Console.WriteLine(item2.Birth);
+
+
+
 
 
 
