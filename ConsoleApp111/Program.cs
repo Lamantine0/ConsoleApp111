@@ -47,6 +47,15 @@ namespace ConsoleApp111
             Item item2 = new Item();
             Console.WriteLine(item2.Birth);
 
+            Item item3 = new Item();
+            item3.Age = 20;
+            Console.WriteLine(item3.Age);
+
+            Item item4 = new Item();
+            // item4.CredutNamber  невозможно присвоить значения свойства доступно только для чтения
+            // изменения поля только внутри класса через метод
+            Console.WriteLine($"Лицевой счет пользователя: { item4.CredutNamber}");
+
 
 
 

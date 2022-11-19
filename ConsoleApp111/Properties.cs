@@ -9,6 +9,9 @@ namespace ConsoleApp111
         private string color;
         private string fullname = "Sheldon Cooper";
         private int birth = 1995;
+        private int age;
+        private int creditnamber = 436547547;
+
 
         public string Color
         {
@@ -38,6 +41,30 @@ namespace ConsoleApp111
             Birth = 2000;  // изменения значения поля
         }
 
+        public int Age
+        {
+            get { return age; }
+            set
+            {
+                if (value == 18)
+                {
+                    Console.WriteLine("Возраст равен 18");
+                }
+
+                else
+                {
+                    Console.WriteLine("Возраст не равен");
+                }
+                    
+                    age = value;
+            }
+        }
+
+
+        public int CredutNamber
+        {
+            get { return creditnamber; } // приватное свойство , только чтение 
+        }
 
     }
 
