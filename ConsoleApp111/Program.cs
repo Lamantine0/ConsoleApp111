@@ -58,6 +58,16 @@ namespace ConsoleApp111
 
 
 
+            Methodover methodover = new Methodover();
+            methodover.ExpandSize(3, 4, 6); // int int int
+            methodover.ExpandSize(2.5, 3.6, 3.3); // double double  double
+            methodover.ExpandSize("Слово1", "Cлово2"); // string string
+                                                  
+
+
+
+
+
 
 
 

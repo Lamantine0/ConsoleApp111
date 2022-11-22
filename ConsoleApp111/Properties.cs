@@ -10,7 +10,7 @@ namespace ConsoleApp111
         private string fullname = "Sheldon Cooper";
         private int birth = 1995;
         private int age;
-        private int creditnamber = 436547547;
+        private int _creditnamber = 436547547;
 
 
         public string Color
@@ -63,7 +63,7 @@ namespace ConsoleApp111
 
         public int CredutNamber
         {
-            get { return creditnamber; } // приватное свойство , только чтение 
+            get { return _creditnamber; } // приватное свойство , только  для чтение 
         }
 
     }
