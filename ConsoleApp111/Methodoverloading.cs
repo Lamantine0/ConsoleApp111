@@ -12,6 +12,8 @@ namespace ConsoleApp111
         public int Height;
 
 
+        
+
         public void ExpandSize(int width, int length, int height)
         {
             Width = width;
@@ -25,7 +27,7 @@ namespace ConsoleApp111
             var result = width + length + height;
             Console.WriteLine(result);
         }
-        // перегрузка метода дваы
+        // перегрузка метода два
         public void ExpandSize(string width, string lenght)
         {
             var result1 = width + lenght;

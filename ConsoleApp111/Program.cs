@@ -62,7 +62,21 @@ namespace ConsoleApp111
             methodover.ExpandSize(3, 4, 6); // int int int
             methodover.ExpandSize(2.5, 3.6, 3.3); // double double  double
             methodover.ExpandSize("Слово1", "Cлово2"); // string string
-                                                  
+
+
+            Static_members_modifier static_Members_Modifier = new Static_members_modifier();
+            Console.WriteLine(Static_members_modifier.GetOrdNumber());
+            Static_members_modifier static_Members_Modifier1 = new Static_members_modifier();
+            Console.WriteLine(Static_members_modifier.GetOrdNumber());
+            Static_members_modifier static_Members_Modifier2 = new Static_members_modifier();
+            Console.WriteLine(Static_members_modifier.GetOrdNumber());
+
+
+
+
+
+
+
 
 
 
