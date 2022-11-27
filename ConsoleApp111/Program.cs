@@ -75,6 +75,13 @@ namespace ConsoleApp111
 
 
 
+            Inheritance inheritance = new Inheritance();
+            inheritance.Name = "Tomaato";
+            inheritance.Printinf();
+
+
+            inheritance = new Employee { Name = "Anton"};
+            inheritance.Printinf();
 
 
 
@@ -85,12 +92,9 @@ namespace ConsoleApp111
 
 
 
-
-
-
-            bob.Print();
-            tom.Print();
-            sam.Print();
+            //bob.Print();
+            //tom.Print();
+            //sam.Print();
 
             Car car = new Car("номер №1", "номер №2");
 
