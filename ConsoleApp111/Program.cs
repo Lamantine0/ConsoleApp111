@@ -83,6 +83,11 @@ namespace ConsoleApp111
             inheritance = new Employee { Name = "Anton"};
             inheritance.Printinf();
 
+            inheritance = new Employee { Name = "Dima" };
+            inheritance.Printinf();
+
+            Aircraft aircraft = new Aircraft("Пассажираский самолет\n\n");
+            aircraft.DisplayType();
 
 
 
