@@ -7,7 +7,14 @@ namespace ConsoleApp111
     // Наследование
     public class Inheritance
     {
-        private string _name = "";
+       private string _name = "";
+       private string _type;
+
+        public string Type
+        {
+            get { return _type; }
+            set { _type = value; }
+        }
 
         public string Name
         {
@@ -15,7 +22,12 @@ namespace ConsoleApp111
             set { _name = value; }
         }
 
-        // в методе Printinf нельзя обратится к переменной _name т.к она с модификтором private и доступна только в родительском классе   
+        public Inheritance(string name)
+        {
+            Name = name;
+        }
+
+
         public void Printinf()
         {
             Console.WriteLine(Name);
@@ -28,18 +40,16 @@ namespace ConsoleApp111
     }
 
     // ключенове слова  sealed запрещает наследоваться от этого класса
-    sealed class Admin : Inheritance
+    sealed class Admin 
     {
 
     }
 
-
-    class Employee : Inheritance // наследование 
+    // TODO : СS7036 ? 
+    public class Employee : Inheritance // наследование 
     {
-        public void Printinf() // метод выводит на консоль свойства класса родителя
-        {
-            Console.WriteLine(Name);
-        }
+        
+       
 
     }
 
@@ -57,5 +67,22 @@ namespace ConsoleApp111
         {
             Console.Write(Type);
         }
+    }
+
+
+    public class Airplane : Inheritance
+    {
+        private string _company;
+
+        public string Company { get { return _company; } set { _company = value; } }
+
+        public Airplane(string type, string _compaty)
+            :base(type)
+        {
+
+        }
+              
+
+
     }
 }
