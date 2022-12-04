@@ -5,10 +5,11 @@ using System.Text;
 namespace ConsoleApp111
 {
     // Наследование
+
     public class Inheritance
     {
-       private string _name = "";
-       private string _type;
+        private string _name;
+        private string _type;
 
         public string Type
         {
@@ -46,9 +47,21 @@ namespace ConsoleApp111
     }
 
     // TODO : СS7036 ? 
-    public class Employee : Inheritance // наследование 
+    public class Employee : Inheritance
     {
-        
+        private int _phonenameber;
+
+        public int PhoneNumber
+        {
+            get { return _phonenameber; }
+            set { _phonenameber = value; }
+        }
+
+        public Employee(int _phonenameber, string name )
+            :base(name)
+        {
+
+        }
        
 
     }
