@@ -46,7 +46,7 @@ namespace ConsoleApp111
 
     }
 
-    // TODO : СS7036 ? 
+    
     public class Employee : Inheritance
     {
         private int _phonenameber;
@@ -60,7 +60,7 @@ namespace ConsoleApp111
         public Employee(int _phonenameber, string name )
             :base(name)
         {
-
+            Console.WriteLine(_phonenameber);
         }
        
 
