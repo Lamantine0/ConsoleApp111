@@ -78,20 +78,43 @@ namespace ConsoleApp111
             Inheritance inheritance = new Inheritance("");
             inheritance.Name = "Tomaato";
             inheritance.Printinf();
-          
+
 
 
             inheritance = new Employee(111, "Dima");
             inheritance.Printinf();
 
-            inheritance = new Employee(222, "Anton"); 
+            inheritance = new Employee(222, "Anton");
             inheritance.Printinf();
 
             Aircraft aircraft = new Aircraft("Пассажираский самолет\n\n");
             aircraft.DisplayType();
 
+
+            Wood[] woods = new Wood[3];
+
+            Oak oak = new Oak();
+            oak.WoodType = "Дерево Дуб";
+            Console.WriteLine(oak);
+
+            BirchTree birchTree = new BirchTree();
+            birchTree.WoodType = "Дерево Береза";
+            Console.WriteLine(birchTree);
+
+            Cedar cedar = new Cedar();
+            cedar.WoodType = "Дерево Кедр";
             
 
+            woods[0] = oak;
+            woods[1] = birchTree;
+            woods[2] = cedar;
+
+            for (int i = 0; i < woods.Length; i++)
+            {
+                woods[i].SeedVillage();
+            }
+
+            Console.ReadKey();
 
 
 
